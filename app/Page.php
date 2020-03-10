@@ -39,6 +39,7 @@ class Page extends Model
         $idaux = User::where('email', $data['email'])->first(); 
         return $idaux['id'];
         
+
         // Forma del Tutorial incluyendo metodos de query builder
         // $value=DB::table('users')->where('username', $data['username'])->get();
         // if($value->count() == 0){

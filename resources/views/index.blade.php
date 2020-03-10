@@ -6,28 +6,33 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
     <!-- <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script> -->
+    <link rel="stylesheet" type="text/css"  href="{{ url('/css/mystyle.css') }}" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   </head>
-  <body>
-
-    <table border='1' id='userTable' style='border-collapse: collapse;'>
-      <thead>
-        <tr>
-          <th>Username</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type='text' id='username'></td>
-          <td><input type='text' id='name' ></td>
-          <td><input type='text' id='email' ></td>
-          <td><input type='button' id='adduser' value='Add'></td>
-        </tr>
-      </tbody>
-    </table>
+  <body class="color_back">
+    <h3> CRUD Laravel</h3>
+    <div class="table-responsive">
+      <table class="table" border='1' id='userTable' style='border-collapse: collapse;'>
+        <thead >
+          <tr >
+            <th>Username</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type='text' id='username'></td>
+            <td><input type='text' id='name' ></td>
+            <td><input type='text' id='email' ></td>
+            <td><input type='button' id='adduser' value='Add'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
 <!-- Script -->
 <script type='text/javascript'>

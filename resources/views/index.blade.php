@@ -152,7 +152,7 @@ function fetchRecords(){
           var tr_str = "<tr>" +
           "<td align='center'><input type='text' value='" + username + "' id='username_"+id+"' disabled></td>" +
           "<td align='center'><input type='text' value='" + name + "' id='name_"+id+"'></td>" + 
-          "<td align='center'>"+ email +"</td>" +
+          "<td align='center'><input type='email' size='50' value='" + email + "' id='email_"+id+"'></td>" +
           "<td align='center'><input type='button' value='Update' class='update' data-id='"+id+"' ><input type='button' value='Delete' class='delete' data-id='"+id+"' ></td>"+
           "</tr>";
 
